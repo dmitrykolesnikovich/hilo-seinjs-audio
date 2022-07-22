@@ -49,7 +49,7 @@ export const SeinAudioClipsExtension: Sein.IGlTFExtension<ISeinAudioClipsExtensi
     }
     const actions = [];
     const extensions = parser.json.extensions || {};
-    const audioClips: ISeinAudioClipsExtension = extensions.Sein_audioClips || {};
+    const audioClips: ISeinAudioClipsExtension = extensions.SEIN_audioClips || {};
     const clips = audioClips.clips || [];
     parser.audioClips = {};
 

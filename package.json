@@ -1,6 +1,6 @@
 {
   "name": "seinjs-audio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Audio system for Sein.js.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -22,6 +22,9 @@
     "name": "Tianyu Dai (dtysky)",
     "email": "dtysky@outlook.com"
   }],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "license": "MIT",
   "bugs": {
     "url": "http://github.com/SeinJS/Sein.js/issues"
