@@ -40,7 +40,7 @@ export interface ISeinAudioClipsExtension {
 }
 
 export const SeinAudioClipsExtension: Sein.IGlTFExtension<ISeinAudioClipsExtension> = {
-  name: 'Sein_audioClips',
+  name: 'SEIN_audioClips',
   init(_, parser: Sein.IGlTFParser) {
     const game = parser.game;
     const audioLoader = game.resource.getLoader<Loader>('Audio');
@@ -94,7 +94,7 @@ export interface ISeinAudioSourceExtension {
 }
 
 export const SeinAudioSourceExtension: Sein.IGlTFExtension<ISeinAudioSourceExtension> = {
-  name: 'Sein_audioSource',
+  name: 'SEIN_audioSource',
   instantiate(entity: Sein.SceneActor | Sein.SceneComponent, info: ISeinAudioSourceExtension, game: Sein.Game, _, resource: Sein.IGlTFModel) {
     if (Sein.isSceneComponent(entity)) {
       return;
@@ -126,7 +126,7 @@ export interface ISeinAudioListenerExtension {
 }
 
 export const SeinAudioListenerExtension: Sein.IGlTFExtension<ISeinAudioListenerExtension> = {
-  name: 'Sein_audioListener',
+  name: 'SEIN_audioListener',
   instantiate(entity: Sein.SceneActor | Sein.SceneComponent, info: ISeinAudioListenerExtension) {
     if (Sein.isSceneComponent(entity)) {
       return;
